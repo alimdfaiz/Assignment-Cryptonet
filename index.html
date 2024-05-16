@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Main Menu</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Main Menu</h1>
+  <div class="menu-item" onclick="toggleSubMenu('playOptions')">PLAY OPTIONS</div>
+  <div class="submenu" id="playOptions">
+    <div class="subitem" onclick="startGame()">Play</div>
+    <div class="subitem">Ranked</div>
+    <div class="subitem">Unranked</div>
+    <div class="subitem">Casual</div>
+  </div>
+  <div class="menu-item" onclick="navigateToLeaderboard()">LEADERBOARD</div>
+  <div class="menu-item" onclick="toggleSubMenu('rules')">RULES</div>
+  <div class="submenu" id="rules">
+    <div class="subitem" onclick="openTutorial()">Interactive Tutorial</div>
+    <div class="subitem" onclick="openGameRules()">Game Rules</div>
+  </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
